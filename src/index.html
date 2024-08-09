@@ -9,7 +9,7 @@
 	</head>
 	<body>
     <!-- INICIO HEADER -->
-    <div class="absolute w-full flex flex-col md:flex-row justify-center items-center text-white">
+    <div class="absolute w-full flex flex-col lg:flex-row justify-center items-center text-white">
 			<a class="px-8 py-4 uppercase" href="#">Empreendimentos</a>
 			<a class="px-8 py-4 uppercase" href="#">Localização</a>
 			<a class="px-8 py-4 uppercase" href="#">Sobre a Edsa</a>
@@ -18,44 +18,53 @@
 		<section class="h-lvh bg-[url('/src/assets/images/header.png')] bg-cover bg-center bg-no-repeat">
 			<div class="container mx-auto flex flex-col items-start justify-center h-full">
 				<div class="grid grid-cols-6 gap-4 w-full">
-					<div class="col-span-6 md:col-span-1">
-						<img src="assets/images/logo-design.png" class="mx-auto md:mx-0 mb-8 md:mb-0" alt="Logo">
+					<div class="col-span-6 lg:col-span-1">
+						<img src="assets/images/logo-design.png" class="mx-auto lg:mx-0 mb-8 lg:mb-0" alt="Logo">
 					</div>
-					<div class="col-span-6 md:col-span-5 flex flex-col justify-center text-white text-center md:text-left">
-						<h1 class="text-3xl mb-3 tracking-default">LOREM DOLOR IPSUM<br class="hidden md:block"/>SIT AMET</h1>
-						<h2 class="text-xl tracking-default">LOREM DOLOR IPSUM SIT AMET,<br class="hidden md:block"/>CONSECTETUR</h2>
+					<div class="col-span-6 lg:col-span-5 flex flex-col justify-center text-white text-center lg:text-left lg:ps-8">
+						<h1 class="text-3xl mb-3 tracking-default">Um conceito único de lazer </h1>
+						<h2 class="text-xl tracking-default">a céu aberto na Barra da Tijuca 3 e 4 quartos de 100 a 172m²</h2>
 					</div>
 				</div>
 			</div>
 		</section>
     <!-- FIM HEADER -->
+
+    <!-- INICIO VIDEO -->
+    <section class="bg-[url('/src/assets/images/bg-video.png')] bg-cover bg-center bg-no-repeat py-36">
+      <img src="assets/images/video-detail.png" class="absolute hidden lg:block right-12 z-0" alt="Detalhes">
+			<div class="container mx-auto z-10 px-8 lg:px-0">
+				<p class="text-lg uppercase tracking-default mb-1">A vida será</p>
+				<p class="text-lg uppercase tracking-default font-bold">sua maior inspiração</p>
+				<div class="h-max mt-8">
+					<iframe class="w-full h-128 relative z-10" src="https://www.youtube.com/embed/MLpWrANjFbI?si=ZqVriRRQXOceTrrs&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+    <!-- FIM VIDEO -->
     
     <!-- INICIO FORM -->
-		<section class="bg-white py-24 px-6 md:px-0">
+		<section class="bg-white py-24 px-6 lg:px-0">
 			<div class="container mx-auto flex flex-col">
-				<div class="md:grid md:grid-cols-2 gap-4 text-center md:text-left">
+				<div class="text-center lg:text-left">
 					<div>
-						<p class="tracking-default">LOREM DOLOR IPSUM</p>
-						<p class="tracking-default font-bold">NULLA VIVERA, LIBERO IN CURSUS</p>
-					</div>
-					<div>
-						<p>Qui excepteur anim magna nulla ipsum laboris voluptate nostrud laboris consequat exercitation est.</p>
+						<p class="tracking-default">Dois residenciais com um <strong>parque incomparável</strong> e <strong>paisagismo exuberante</strong>.</p>
 					</div>
 				</div>
-				<div class="md:grid md:grid-cols-5 gap-4 items-end mt-20">
+				<div class="lg:grid lg:grid-cols-5 gap-4 items-end mt-20">
 					<div class="col-span-1">
 						<span class="text-gray-700">NOME*</span>
 						<input type="text" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black">
 					</div>
-					<div class="col-span-1 mt-8 md:mt-0">
+					<div class="col-span-1 mt-8 lg:mt-0">
 						<span class="text-gray-700">EMAIL*</span>
 						<input type="email" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black">
 					</div>
-					<div class="col-span-1 mt-8 md:mt-0">
+					<div class="col-span-1 mt-8 lg:mt-0">
 						<span class="text-gray-700">CELULAR*</span>
 						<input type="text" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black">
 					</div>
-					<div class="col-span-2 mt-8 md:mt-0">
+					<div class="col-span-2 mt-8 lg:mt-0">
 						<button class="uppercase w-full bg-black text-white py-2 tracking-default text-sm">Quero mais informações</button>
 					</div>
 				</div>
@@ -67,12 +76,14 @@
 		<section class="relative">
 			<div class="w-full mx-auto relative">
 				<div class="shadow-md rounded-md overflow-hidden relative">
+
+          <!-- INICIO OX ACCORDION -->
 					<div class="border-b bg-[url('/src/assets/images/bg-ox.png')] bg-cover bg-start bg-no-repeat">
 						<div class="container mx-auto">
-							<button class="w-full text-left py-10 focus:outline-none flex justify-between items-center" onclick="toggleAccordion('accordion-1', 'icon-accordion-1')">
-                <span class="flex items-center">
+							<button class="w-full text-left py-10 focus:outline-none flex justify-between items-center px-8" onclick="toggleAccordion('accordion-1', 'icon-accordion-1')">
+                <span class="flex items-start lg:items-center lg:flex-row flex-col">
                   <img src="assets/images/logo-ox.png" alt="Logo OX Accordion" class="">
-                    <p class="ms-16 text-white tracking-default">3 e 4 quartos de 132M² a 172M²<br/>
+                    <p class="pt-8 lg:pt-0 lg:ms-16 text-white tracking-default">3 e 4 quartos de 132M² a 172M²<br/>
                       gardens, coberturas duplex e lineares</p>
                 </span>
                 <img id="icon-accordion-1" src="assets/images/plus-icon.png" alt="Icone de Mais">
@@ -80,15 +91,14 @@
 						</div>
 						<div id="accordion-1" class="relative hidden">
 							<div class="container mx-auto">
-								<div class="h-max mt-8">
-									<iframe height="480px" class="aspect-video w-full" src="https://www.youtube.com/embed/9xwazD5SyVg?si=gg-5BO3v_8bovgY3" frameborder="0"></iframe>
-								</div>
 								<!-- FORMULÁRIO -->
-								<div class="grid grid-cols-2 gap-4 items-center py-32">
-									<div>
-										<p class="tracking-default">LOREM IPSUM</p>
-										<p class="tracking-default font-bold">DOLOR SIT AMET</p>
-										<p class="mt-4 w-3/4">Magna cupidatat proident dolore aute proident adipisicing mollit exercitation ea sunt ullamco cillum. Sint quis Lorem aliquip nisi aute laboris sint. Labore Lorem occaecat proident minim labore ad ex.</p>
+								<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center py-32 px-8 lg:px-0">
+									<div class="mb-8 lg:mb-0 text-center lg:text-left">
+										<p class="tracking-default">NAS MÃOS CERTAS</p>
+										<p class="tracking-default font-bold">O NATURAL SE TRANSFORMA NO INIMAGINÁVEL.</p>
+										<p class="mt-4 w-full lg:w-3/4">2 E 3 QUARTOS DE 132 A 172m²<br />
+                      GARDENS, COBERTURAS DUPLEX E LINEARES
+                      </p>
 									</div>
 									<div>
 										<p class="tracking-default mb-10 text-center font-bold">RECEBA MAIS INFORMAÇÕES</p>
@@ -114,92 +124,225 @@
 									</div>
 								</div>
 							</div>
+
 							<!-- GALERIA ONE -->
 							<div class="py-20 bg-black text-white text-center relative">
-                <img src="assets/images/ox-details-left.png" class="absolute" alt="Detalhes">
-								<div class="container-mx-auto">
-									<p class="tracking-default">LOREM IPSUM</p>
-									<p class="tracking-default font-bold">DOLOR SIT AMET</p>
+                <img src="assets/images/ox-details-left.png" class="absolute hidden lg:block" alt="Detalhes">
+								<div class="container-mx-auto  px-12 lg:px-0">
+									<p class="tracking-default">O DESIGN</p>
+                  <p class="tracking-default font-bold">EM SEU ESTADO NATURAL</p>
 									<div class="container mx-auto center slider mt-24">
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-1.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-2.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-3.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-4.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-5.png">
-										</div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-1.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-2.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-3.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-4.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-5.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-6.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-7.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-8.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-9.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-10.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-11.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-12.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-13.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-14.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-15.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-16.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-17.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-18.jpg')]" style="height: 12rem;"></div>
 									</div>
 								</div>
 							</div>
+
 							<!-- GALERIA TWO -->
 							<div class="py-20 text-black relative">
-                <img src="assets/images/ox-details-right.png" class="absolute bottom-0 right-0" alt="Detalhes">
+                <img src="assets/images/ox-details-right.png" class="absolute bottom-0 right-0 hidden lg:block" alt="Detalhes">
 								<div class="container mx-auto">
 									<div class="text-center">
-										<p class="tracking-default">LOREM IPSUM</p>
-										<p class="tracking-default font-bold">DOLOR SIT AMET</p>
+										<p class="tracking-default">110 MIL M². UM CONCEITO ÚNICO DE LAZER PRIVATIVO E INCOMPARÁVEL A CÉU ABERTO.</p>
+										<p class="tracking-default font-bold">MAIS DO QUE NATUREZA COM DESIGN, CRIAMOS O INESQUECÍVEL.</p>
 									</div>
 									<div class="w-3/4 mx-auto big slider mt-24">
-										<div class="bg-[url('/src/assets/images/ox-big.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
-                    <div class="bg-[url('/src/assets/images/ox-big.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
-                    <div class="bg-[url('/src/assets/images/ox-big.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
-										<div class="bg-[url('/src/assets/images/ox-big.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-1.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-2.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-3.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-4.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-5.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-6.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-7.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-8.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-9.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-10.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-11.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-12.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-13.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-14.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-15.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-16.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-17.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-18.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-19.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-20.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-21.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-22.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-23.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-24.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-25.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-26.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-27.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-28.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-29.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-30.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-31.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-32.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-33.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-34.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-35.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-36.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-37.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-38.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-39.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-40.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-41.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/ox-slider/big/slide-two-42.jpg" class="mx-4" alt="">
+                    </div>                    
 									</div>
 									<div class="w-3/4 mx-auto my-24">
-										<div class="flex justify-between">
-											<div>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
+										<div class="sm:grid sm:grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:justify-between gap-8">
+											<div class="flex-1">
+												<p class="tracking-default">Personal concierge</p>
+												<p class="tracking-default">Shuttle exclusivo</p>
+												<p class="tracking-default">Central de facilidades pay per use</p>
+												<p class="tracking-default">Coworking</p>
 											</div>
-											<div>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
+											<div class="flex-1">
+												<p class="tracking-default">Sala de massagem</p>
+												<p class="tracking-default">Fitness Support</p>
+												<p class="tracking-default">Central de encomendas</p>
+												<p class="tracking-default">Ferramentas compartilhadas</p>
 											</div>
-											<div>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
+											<div class="flex-1 justify-self-end">
+												<p class="tracking-default">Pet park</p>
+												<p class="tracking-default">Fast Market</p>
+												<p class="tracking-default">Tomada para recarga de bikes e carros elétricos</p>
+												<p class="tracking-default">Wi-fi nas áreas comuns sociais</p>
 											</div>
 										</div>
 									</div>
-									<div class="button text-center">
+									<div class="button text-center z-10">
 										<button class="mx-auto uppercase px-12 bg-black text-white py-2 tracking-default text-sm">Quero mais informações</button>
 									</div>
-									<div class="grid grid-cols-2 grid-flow-col gap-4 items-center mx-auto mt-52">
-										<div class="pe-20">
-											<p class="tracking-default">O DESIGN EM SEU</p>
-											<p class="tracking-default font-bold mb-4">ESTADO NATURAL</p>
-											<p>3 E 4 QUARTOS DE 132 A 172M</p>
-											<p>GARDENS, COBERTURAS DUPLEX E LINEARES</p>
-											<button class="mt-14 uppercase w-3/4 bg-black text-white py-2 tracking-default text-sm">Quero ver as plantas</button>
+									<div class="grid grid-cols-2 grid-flow-col gap-4 items-center mx-auto mt-10 lg:mt-52 z-10 px-8 lg:px-0">
+										<div class="lg:pe-20">
+											<p class="tracking-default">Personalize o apartamento</p>
+											<p class="tracking-default font-bold mb-4"> de um jeito só seu</p>
+											<p>Exclusividade</p>
+											<p>Customização</p>
+											<p>Conforto</p>
+											<p>Comodidade</p>
+											<p>Garantia</p>
+											<button class="z-10 mt-8 lg:mt-14 uppercase w-3/4 bg-black text-white py-2 tracking-default text-sm">Quero ver as plantas</button>
 										</div>
 										<div class="z-10">
-											<img src="assets/images/book-ox.png" alt="Logo">
+											<img src="assets/images/book-ox.png" alt="Book OX">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+          <!-- FIM OX ACCORDION -->
+
+          <!-- INICIO WOODS ACCORDION -->
 					<div class="border-b bg-[url('/src/assets/images/bg-woods.png')] bg-cover bg-start bg-no-repeat">
 						<div class="container mx-auto">
-							<button class="w-full text-left py-10 focus:outline-none flex justify-between items-center" onclick="toggleAccordion('accordion-2', 'icon-accordion-2')">
-                <span class="flex items-center">
+							<button class="w-full text-left py-10 focus:outline-none flex justify-between items-center px-8" onclick="toggleAccordion('accordion-2', 'icon-accordion-2')">
+                <span class="flex flex-col lg:flex-row items-start lg:items-center">
                   <img src="assets/images/logo-woods.png" alt="Logo Woods Accordion" class="">
-                    <p class="ms-16 text-white tracking-default">3 quartos de 100M² a 117M². 4 quartos de 115M²<br/>
+                    <p class="pt-8 lg:pt-0 lg:ms-16 text-white tracking-default">3 quartos de 100M² a 117M². 4 quartos de 115M²<br/>
                       gardens, coberturas duplex e lineares</p>
                 </span>
                 <img id="icon-accordion-2" src="assets/images/plus-icon.png" alt="Icone de Mais">
@@ -207,16 +350,18 @@
 						</div>
 						<div id="accordion-2" class="relative hidden">
 							<div class="container mx-auto">
-								<div class="h-max">
-									<iframe height="480px" class="aspect-video w-full" src="https://www.youtube.com/embed/9xwazD5SyVg?si=gg-5BO3v_8bovgY3" frameborder="0"></iframe>
-								</div>
 								<!-- FORMULÁRIO -->
-								<div class="grid grid-cols-2 gap-4 items-center py-32">
-									<div>
-										<p class="tracking-default">LOREM IPSUM</p>
-										<p class="tracking-default font-bold text-white">DOLOR SIT AMET</p>
-										<p class="mt-4 w-3/4">Magna cupidatat proident dolore aute proident adipisicing mollit exercitation ea sunt ullamco cillum. Sint quis Lorem aliquip nisi aute laboris sint. Labore Lorem occaecat proident minim labore ad ex.</p>
+								<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center py-32 px-8 lg:px-0">
+									<div class="mb-8 lg:mb-0 text-center lg:text-left">
+										<p class="tracking-default">NATURALMENTE</p>
+										<p class="tracking-default font-bold">IRRETOCÁVEL</p>
+										<p class="mt-4 w-full lg:w-3/4">
+                      3 QUARTOS DE 100 A 117M²<br/>
+                      4 QUARTOS DE 115M²<br/>
+                      GARDENS, COBERTURAS DUPLEX E LINEARES
+                    </p>
 									</div>
+
 									<div>
 										<p class="tracking-default mb-10 text-center">RECEBA MAIS INFORMAÇÕES</p>
 										<div class="grid grid-cols-2 gap-4">
@@ -243,26 +388,28 @@
 							</div>
 							<!-- GALERIA THREE -->
 							<div class="py-20 bg-black text-white text-center relative">
-                <img src="assets/images/detail-woods.png" class="absolute top-0 right-0 h-9/100" alt="">
-								<div class="container-mx-auto">
-									<p class="tracking-default text-design-gray">LOREM IPSUM</p>
-									<p class="tracking-default font-bold">DOLOR SIT AMET</p>
+                <img src="assets/images/detail-woods.png" class="hidden md:block absolute top-0 right-0 h-9/100" alt="">
+								<div class="container-mx-auto px-12 lg:px-0">
+									<p class="tracking-default text-design-gray">54 MIL M² DE TERRENO</p>
+									<p class="tracking-default font-bold">PARA APENAS 196 UNIDADES</p>
 									<div class="container mx-auto center slider mt-24">
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-1.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-2.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-3.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-4.png">
-										</div>
-										<div class="mx-4">
-											<img src="assets/images/ox-slide-5.png">
-										</div>
+										<div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-1.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-2.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-3.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-4.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-5.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-6.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-7.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-8.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-9.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-10.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-11.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-12.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-13.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-14.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-15.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-16.jpg')]" style="height: 12rem;"></div>
+                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-17.jpg')]" style="height: 12rem;"></div>
 									</div>
 								</div>
 							</div>
@@ -272,48 +419,163 @@
                 <img src="assets/images/details-woods-right.png" class="absolute bottom-8 right-0" alt="">
 								<div class="container mx-auto">
 									<div class="text-center">
-										<p class="tracking-default">LOREM IPSUM</p>
-										<p class="tracking-default font-bold text-white">DOLOR SIT AMET</p>
+										<p class="tracking-default">SUA NATUREZA ESPERAVA POR ESSE LUGAR. UM PARQUE PRIVATIVO COM 8.700M² INTEGRADO</p>
+										<p class="tracking-default font-bold text-white">
+                      À NATUREZA. ALÉM DE UMA ÁREA PRESERVADA
+                      IN NATURA COM MAIS DE 18 MIL M²
+                    </p>
 									</div>
 									<div class="w-3/4 mx-auto big slider mt-24">
-										<div class="bg-[url('/src/assets/images/big-woods.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
-                    <div class="bg-[url('/src/assets/images/big-woods.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
-                    <div class="bg-[url('/src/assets/images/big-woods.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
-										<div class="bg-[url('/src/assets/images/big-woods.png')] bg-center bg-cover bg-no-repeat size-full" style="height: 33.75rem !important;"></div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-1.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-2.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-3.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-4.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-5.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-6.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-7.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-8.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-9.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-10.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-11.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-12.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-13.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-14.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-15.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-16.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-17.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-18.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-19.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-20.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-21.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-22.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-23.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-24.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-25.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-26.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-27.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-28.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-29.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-30.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-31.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-32.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-33.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-34.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-35.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-36.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-37.jpg" class="mx-4" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/images/woods-slider/big/slider-two-38.jpg" class="mx-4" alt="">
+                    </div>
 									</div>
 									<div class="w-3/4 mx-auto my-24">
-										<div class="flex justify-between">
-											<div>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
+										<div class="sm:grid sm:grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:justify-between gap-8">
+											<div class="flex-1">
+												<p class="tracking-default">Personal concierge</p>
+												<p class="tracking-default">Shuttle exclusivo</p>
+												<p class="tracking-default">Central de facilidades pay per use</p>
+												<p class="tracking-default">Coworking</p>
 											</div>
-											<div>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
+											<div class="flex-1">
+												<p class="tracking-default">Sala de massagem</p>
+												<p class="tracking-default">Fitness Support</p>
+												<p class="tracking-default">Central de encomendas</p>
+												<p class="tracking-default">Ferramentas compartilhadas</p>
 											</div>
-											<div>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
-												<p class="tracking-default">LOREM IPSUM DORM</p>
+											<div class="flex-1 justify-self-end">
+												<p class="tracking-default">Pet park</p>
+												<p class="tracking-default">Fast Market</p>
+												<p class="tracking-default">Tomada para recarga de bikes e carros elétricos</p>
+												<p class="tracking-default">Wi-fi nas áreas comuns sociais</p>
 											</div>
 										</div>
 									</div>
 									<div class="button text-center">
 										<button class="mx-auto uppercase px-12 bg-yellow-woods text-black py-2 tracking-default text-sm">Quero mais informações</button>
 									</div>
-									<div class="grid grid-cols-2 grid-flow-col gap-4 items-center mx-auto mt-52">
-										<div class="pe-20 uppercase">
-											<p class="tracking-default">naturalmente</p>
-											<p class="tracking-default font-bold mb-4 text-white">ESTADO NATURAL</p>
-											<p>3 QUARTOS DE 100 A 117M²</p>
-											<p>4 QUARTOS DE 115M²</p>
-											<p>GARDENS, COBERTURAS DUPLEX E LINEARES</p>
-											<button class="mt-14 uppercase w-3/4 bg-yellow-woods text-black py-2 tracking-default text-sm">Quero ver as plantas</button>
+									<div class="grid grid-cols-1 md:grid-cols-2 md:grid-flow-col gap-4 items-center mx-auto mt-10 lg:mt-52 z-10 px-8 lg:px-0 text-center md:text-left">
+										<div class="md:pe-20 uppercase">
+											<p class="tracking-default">Personalize o apartamento</p>
+											<p class="tracking-default font-bold mb-4 text-white"> de um jeito só seu</p>
+											<p>Exclusividade</p>
+											<p>Customização</p>
+											<p>Conforto</p>
+											<p>Comodidade</p>
+											<p>Garantia</p>
+											<button class="mt-8 lg:mt-14 uppercase w-3/4 bg-yellow-woods text-black py-2 tracking-default text-sm">Quero ver as plantas</button>
 										</div>
 										<div class="z-10">
 											<img src="assets/images/book-woods.png" alt="Logo">
@@ -323,22 +585,24 @@
 							</div>
 						</div>
 					</div>
+          <!-- FIM WOODS ACCORDION -->
+
 				</div>
 			</div>
 		</section>
     <!-- FIM ACCORDIONS -->
 
     <!-- INICIO SOBRE -->
-		<section class="md:py-24 bg-[url('/src/assets/images/bg-location.png')]">
+		<section class="lg:py-24 bg-[url('/src/assets/images/bg-location.png')] lg:bg-cover lg:bg-center bg-bottom">
 			<div class="container mx-auto z-10">
-				<div class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-4 w-full items-center">
-					<div class="flex flex-col items-center order-1 md:order-0">
+				<div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-4 w-full items-center">
+					<div class="flex flex-col items-center order-1 lg:order-0">
 						<img src="assets/images/logos-location.png" alt="">
 					</div>
-					<div class="py-20 px-8 md:px-12 bg-black order-0 md:order-1">
+					<div class="py-20 px-8 lg:px-12 bg-black order-0 lg:order-1">
 						<p class="text-2xl mb-12 tracking-default text-white leading-tight">
 							LOCALIZAÇÃO PRIVILEGIADA
-							CERCADA DE NATUREZA<br class="hidden md:block"/>
+							CERCADA DE NATUREZA<br class="hidden lg:block"/>
 							<span class="font-bold">NA BARRA DA TIJUCA</span>
 						</p>
 						<p class="text-white leading-relaxed">
@@ -356,48 +620,45 @@
     <!-- FIM SOBRE -->
     
     <!-- INICIO DETALHES -->
-		<section class="container mx-auto py-20 md:pt-44 md:pb-56 px-8 md:px-0">
+		<section class="container mx-auto py-20 lg:pt-44 lg:pb-56 px-8 lg:px-0">
       <!-- INICIO EDSA -->
-			<div class="grid grid-rows md:grid-cols-2 md:grid-flow-col gap-4 items-center pb-20 md:mb-52">
-				<div class="md:pe-20 text-center md:text-left">
+			<div class="grid grid-rows lg:grid-cols-2 lg:grid-flow-col gap-4 items-center pb-20 lg:mb-52">
+				<div class="mb-8 lg:mb-0 lg:pe-20 text-center lg:text-left">
 					<p class="tracking-default">SOBRE</p>
 					<p class="tracking-default font-bold mb-4">A EDSA</p>
 					<p>
 						Fundada há mais de seis décadas, a EDSA é uma empresa de arquitetura paisagística reconhecida mundialmente. A EDSA influencia mais de 2500 lugares em todo o mundo, criando, transformando e ressignificando locais, espaços e cidades, celebrando a experiência humana, com consciência ambiental e honrando histórias culturais.<br/>
             <strong>EDSA CONECTANDO PESSOAS, NATUREZA E LUGARES.</strong>
 					</p>
-					<button class="mt-14 uppercase w-full bg-black text-white py-2 tracking-default text-sm">Quero mais informações</button>
 				</div>
 				<div>
-					<img src="assets/images/about-edsa.jpg" alt="Logo">
+					<img src="assets/images/about-edsa.jpg" class="mx-auto lg:mx-0" alt="Logo EDSA">
 				</div>
 			</div>
       <!-- FIM EDSA -->
 
       <!-- INICIO SAFRA -->
-			<div class="grid md:grid-cols-2 md:grid-flow-col gap-4 items-center mb-52">
-				<div class="order-1 md:order-0">
-					<img src="assets/images/about-safra.png" alt="Logo">
+			<div class="grid lg:grid-cols-2 lg:grid-flow-col gap-4 items-center mb-52">
+				<div class="order-1 lg:order-0">
+					<img src="assets/images/about-safra.png" class="mx-auto lg:mx-0" alt="Logo Safra">
 				</div>
-				<div class="order-0 md:order-1 md:ps-20 text-center md:text-left">
+				<div class="mb-8 lg:mb-0 order-0 lg:order-1 lg:ps-20 text-center lg:text-left">
 					<p class="tracking-default">SOBRE</p>
 					<p class="tracking-default font-bold mb-4">O BANCO SAFRA</p>
 					<p>
-						Voluptate sit in cupidatat enim ipsum ullamco non qui non adipisicing ex et dolor in. Mollit do sint consectetur ad labore exercitation consequat culpa proident laboris ut culpa. Dolore labore adipisicing adipisicing nisi incididunt. Minim exercitation duis ad et exercitation cillum laboris. Fugiat Lorem nisi amet consequat ipsum sint duis nulla consectetur nostrud pariatur ex velit sint. Velit magna id non proident enim exercitation et ut voluptate pariatur id eu anim.
-						Laborum cillum sunt enim ullamco deserunt cupidatat reprehenderit deserunt quis incididunt exercitation ut laborum veniam. Mollit reprehenderit nostrud ad in consectetur non et ullamco id occaecat nisi cupidatat laborum est. Non dolor enim ex adipisicing duis dolore sit consectetur laborum esse magna sunt aliqua.
-						Exercitation cillum non qui exercitation laborum. Sunt eu nisi deserunt ad aute consectetur mollit ut sunt sunt tempor est. Duis culpa est do aliqua voluptate fugiat duis sint pariatur.
+						A J. SAFRA PROPERTIES LEVA A SOLIDEZ E A TRADIÇÃO DE 180 ANOS DO GRUPO J. SAFRA TAMBÉM AO MERCADO IMOBILIÁRIO, COM TRANSPARÊNCIA, EXCELÊNCIA E CREDIBILIDADE.
+TEMOS A MISSÃO DE OFERECER AOS NOSSOS CLIENTES SOLUÇÕES DE DESENVOLVIMENTO IMOBILIÁRIO COM MODERNIDADE, INOVAÇÃO E SUSTENTABILIDADE EM ESPAÇOS PARA MORAR, TRABALHAR OU INVESTIR.
 					</p>
-					<button class="mt-14 uppercase w-full bg-black text-white py-2 tracking-default text-sm">Quero mais informações</button>
 				</div>
 			</div>
       <!-- FIM SAFRA -->
 
       <!-- INICIO RJZ -->
-			<div class="grid md:grid-cols-5 md:grid-flow-col gap-4 items-center md:mb-44 mb-20">
-				<div class="md:col-span-2 flex justify-center items-center">
+			<div class="grid lg:grid-cols-5 lg:grid-flow-col gap-4 items-center lg:mb-44 mb-20">
+				<div class="lg:col-span-2 flex justify-center items-center">
 					<img src="assets/images/logo-rjz-cyrela.png" alt="Logo">
 				</div>
-				<p class="md:col-span-3 text-center md:text-left">
+				<p class="lg:col-span-3 text-center lg:text-left">
 					Um RJZ Cyrela é feito de mil ideias, mil pessoas, mil ensaios, mil corações e mil detalhes. E são esses detalhes que fazem com que as pessoas sintam o prazer de estar em casa. Nos inspiramos no mundo, em suas manifestações estéticas arquitetônicas, no design e bem viver. Com eles escolhemos o melhor e propomos, de forma única, algo diferente. RJZ Cyrela. Espaços que inspiram vidas.
 				</p>
 			</div>
@@ -406,28 +667,28 @@
       <!-- INICIO OUTROS PROJETOS -->
 			<div>
 				<p class="tracking-default text-center mb-20">OUTROS PROJETOS RIL CYRELA<br/><span class="font-bold">NA BARRA DA TIJUCA</span></p>
-				<div class="grid md:grid-cols-5 gap-4">
-					<div class="flex flex-col justify-center text-center mb-4 md:mb-0">
+				<div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+					<div class="flex flex-col justify-center text-center mb-4 lg:mb-0">
 						<img class="mb-1" src="assets/images/latitud.png" alt="Logo Latitud">
 						<p class="mb-1 tracking-default font-bold uppercase">Latitud</p>
 						<p class="tracking-default uppercase md:text-nowrap text-wrap">Condominiun Design </p>
 					</div>
-          <div class="flex flex-col justify-center text-center mb-4 md:mb-0">
+          <div class="flex flex-col justify-center text-center mb-4 lg:mb-0">
 						<img class="mb-1" src="assets/images/mudra.png" alt="Logo Mudra">
 						<p class="mb-1 tracking-default font-bold uppercase">Mudra</p>
 						<p class="tracking-default uppercase">Full Living</p>
 					</div>
-          <div class="flex flex-col justify-center text-center mb-4 md:mb-0">
+          <div class="flex flex-col justify-center text-center mb-4 lg:mb-0">
 						<img class="mb-1" src="assets/images/orygem.png" alt="Logo Orygem">
 						<p class="mb-1 tracking-default font-bold uppercase">Orygem</p>
 						<p class="tracking-default uppercase">Acqua Home</p>
 					</div>
-          <div class="flex flex-col justify-center text-center mb-4 md:mb-0">
+          <div class="flex flex-col justify-center text-center mb-4 lg:mb-0">
 						<img class="mb-1" src="assets/images/concept.png" alt="Logo Concept">
 						<p class="mb-1 tracking-default font-bold uppercase">Concept</p>
 						<p class="tracking-default uppercase">By RJZ Cyrela</p>
 					</div>
-          <div class="flex flex-col justify-center text-center mb-4 md:mb-0">
+          <div class="flex flex-col justify-center text-center mb-4 lg:mb-0">
 						<img class="mb-1" src="assets/images/riserva-golf.png" alt="Logo Riserva Golf">
 						<p class="mb-1 tracking-default font-bold uppercase">Riserva Golf</p>
 						<p class="tracking-default uppercase">Vista Mare</p>
@@ -437,7 +698,7 @@
       <!-- FIM OUTROS PROJETOS -->
 		</section>
     <footer class="bg-black py-16">
-      <div class="container mx-auto flex justify-center md:justify-end">
+      <div class="container mx-auto flex justify-center lg:justify-end">
         <p class="text-white tracking-default">HANDMADE BY <span class="font-bold">SENSORIAL</span></p>
       </div>
     </footer>
@@ -464,12 +725,44 @@
           $(accordion).find(".center").slick({
             dots: false,
             infinite: true,
-            centerMode: true,
             slidesToShow: 5,
-            slidesToScroll: 3
+            slidesToScroll: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
           });
   
-          $(accordion).find(".big").slick();
+          $(accordion).find(".big").slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '60px',
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: true
+          });
         }
       }
     }
