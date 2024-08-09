@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Book';
-  src: url('AvenirLTStd-Book.woff2') format('woff2'),
-      url('AvenirLTStd-Book.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,8 +13,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-HeavyOblique';
-  src: url('AvenirLTStd-HeavyOblique.woff2') format('woff2'),
-      url('AvenirLTStd-HeavyOblique.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-HeavyOblique.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-HeavyOblique.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,8 +22,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-LightOblique';
-  src: url('AvenirLTStd-LightOblique.woff2') format('woff2'),
-      url('AvenirLTStd-LightOblique.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-LightOblique.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-LightOblique.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -31,8 +31,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-MediumOblique';
-  src: url('AvenirLTStd-MediumOblique.woff2') format('woff2'),
-      url('AvenirLTStd-MediumOblique.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-MediumOblique.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-MediumOblique.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -40,8 +40,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Black';
-  src: url('AvenirLTStd-Black.woff2') format('woff2'),
-      url('AvenirLTStd-Black.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Black.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -49,8 +49,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Oblique';
-  src: url('AvenirLTStd-Oblique.woff2') format('woff2'),
-      url('AvenirLTStd-Oblique.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Oblique.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Oblique.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -58,8 +58,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Medium';
-  src: url('AvenirLTStd-Medium.woff2') format('woff2'),
-      url('AvenirLTStd-Medium.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Medium.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -67,8 +67,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Heavy';
-  src: url('AvenirLTStd-Heavy.woff2') format('woff2'),
-      url('AvenirLTStd-Heavy.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Heavy.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -76,8 +76,8 @@
 
 @font-face {
   font-family: 'Avenir-Book';
-  src: url('Avenir-Book.woff2') format('woff2'),
-      url('Avenir-Book.woff') format('woff');
+  src: url('./../fonts/Avenir-Book.woff2') format('woff2'),
+      url('./../fonts/Avenir-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -85,8 +85,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Light';
-  src: url('AvenirLTStd-Light.woff2') format('woff2'),
-      url('AvenirLTStd-Light.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Light.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -94,8 +94,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-BookOblique';
-  src: url('AvenirLTStd-BookOblique.woff2') format('woff2'),
-      url('AvenirLTStd-BookOblique.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-BookOblique.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-BookOblique.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -103,8 +103,8 @@
 
 @font-face {
   font-family: 'Avenir-Heavy';
-  src: url('Avenir-Heavy.woff2') format('woff2'),
-      url('Avenir-Heavy.woff') format('woff');
+  src: url('./../fonts/Avenir-Heavy.woff2') format('woff2'),
+      url('./../fonts/Avenir-Heavy.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -112,8 +112,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-BlackOblique';
-  src: url('AvenirLTStd-BlackOblique.woff2') format('woff2'),
-      url('AvenirLTStd-BlackOblique.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-BlackOblique.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-BlackOblique.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -121,8 +121,8 @@
 
 @font-face {
   font-family: 'AvenirLTStd-Roman';
-  src: url('AvenirLTStd-Roman.woff2') format('woff2'),
-      url('AvenirLTStd-Roman.woff') format('woff');
+  src: url('./../fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+      url('./../fonts/AvenirLTStd-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -130,8 +130,8 @@
 
 @font-face {
   font-family: 'Avenir-Medium';
-  src: url('Avenir-Medium.woff2') format('woff2'),
-      url('Avenir-Medium.woff') format('woff');
+  src: url('./../fonts/Avenir-Medium.woff2') format('woff2'),
+      url('./../fonts/Avenir-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
