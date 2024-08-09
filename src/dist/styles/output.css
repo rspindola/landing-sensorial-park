@@ -831,6 +831,10 @@ select {
   top: 0px;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .top-8 {
   top: 2rem;
 }
@@ -1097,6 +1101,12 @@ select {
   gap: 2rem;
 }
 
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
 .justify-self-end {
   justify-self: end;
 }
@@ -1109,14 +1119,6 @@ select {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.text-wrap {
-  text-wrap: wrap;
-}
-
-.text-nowrap {
-  text-wrap: nowrap;
 }
 
 .rounded {
@@ -1262,11 +1264,6 @@ select {
   padding-bottom: 9rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1321,6 +1318,11 @@ select {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1343,6 +1345,10 @@ select {
 
 .tracking-default {
   letter-spacing: .25em;
+}
+
+.tracking-link {
+  letter-spacing: .2rem;
 }
 
 .tracking-title {
@@ -1709,14 +1715,6 @@ select {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:text-wrap {
-    text-wrap: wrap;
-  }
-
-  .md\:text-nowrap {
-    text-wrap: nowrap;
   }
 
   .md\:px-8 {

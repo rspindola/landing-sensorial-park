@@ -15,6 +15,7 @@ module.exports = {
         '9/100': '90%'
       },
       letterSpacing: {
+        'link': '.2rem',
         default: '.25em',
         'title': '1rem',
       }
