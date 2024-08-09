@@ -783,6 +783,22 @@ select {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -927,12 +943,40 @@ select {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
+.table-caption {
+  display: table-caption;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
 .grid {
   display: grid;
+}
+
+.contents {
+  display: contents;
+}
+
+.\!hidden {
+  display: none !important;
 }
 
 .hidden {
@@ -946,6 +990,10 @@ select {
 
 .h-128 {
   height: 34rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-64 {
@@ -969,6 +1017,10 @@ select {
   height: max-content;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-3\/4 {
   width: 75%;
 }
@@ -977,8 +1029,20 @@ select {
   width: 100%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.resize {
+  resize: both;
 }
 
 .grid-flow-col {
@@ -1041,12 +1105,26 @@ select {
   overflow: hidden;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .text-wrap {
   text-wrap: wrap;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-0 {
@@ -1116,16 +1194,8 @@ select {
   background-image: url('/src/assets/images/bg-woods.png');
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/big-woods\.png\'\)\] {
-  background-image: url('/src/assets/images/big-woods.png');
-}
-
 .bg-\[url\(\'\/src\/assets\/images\/header\.png\'\)\] {
   background-image: url('/src/assets/images/header.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-big\.png\'\)\] {
-  background-image: url('/src/assets/images/ox-big.png');
 }
 
 .bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-1\.jpg\'\)\] {
@@ -1200,74 +1270,6 @@ select {
   background-image: url('/src/assets/images/ox-slider/one/slider-one-9.jpg');
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-1\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-1.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-10\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-10.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-11\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-11.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-12\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-12.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-13\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-13.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-14\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-14.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-15\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-15.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-16\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-16.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-17\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-17.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-2\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-2.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-3\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-3.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-4\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-4.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-5\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-5.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-6\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-6.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-7\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-7.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-8\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-8.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/slider-one-9\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/slider-one-9.jpg');
-}
-
 .bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-1\.jpg\'\)\] {
   background-image: url('/src/assets/images/woods-slider/one/galeria-one-1.jpg');
 }
@@ -1334,6 +1336,10 @@ select {
 
 .bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-9\.jpg\'\)\] {
   background-image: url('/src/assets/images/woods-slider/one/galeria-one-9.jpg');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-1\'\)\] {
+  background-image: url('/src/assets/images/woods-slider/one/galeria-one-1');
 }
 
 .bg-cover {
@@ -1461,6 +1467,10 @@ select {
   text-transform: uppercase;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -1493,10 +1503,39 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.\!invert {
+  --tw-invert: invert(100%) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.\!filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .focus\:border-black:focus {
@@ -1523,11 +1562,35 @@ select {
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:grid-flow-col {
@@ -1538,8 +1601,17 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:text-nowrap {
     text-wrap: nowrap;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:pe-20 {

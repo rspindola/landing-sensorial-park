@@ -4,16 +4,17 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./dist/styles/output.css" rel="stylesheet">
+    <link href="./dist/lightbox/css/lightbox.min.css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	</head>
 	<body>
     <!-- INICIO HEADER -->
-    <div class="absolute w-full flex flex-col lg:flex-row justify-center items-center text-white">
-			<a class="px-8 py-4 uppercase" href="#">Empreendimentos</a>
-			<a class="px-8 py-4 uppercase" href="#">Localização</a>
-			<a class="px-8 py-4 uppercase" href="#">Sobre a Edsa</a>
-			<a class="px-8 py-4 uppercase" href="#">RJZ Cyrela</a>
+    <div class="absolute w-full grid grid-cols-2 text-center md:flex md:flex-row justify-center items-center text-white">
+			<a class="md:px-8 py-4 uppercase" href="#">Empreendimentos</a>
+			<a class="md:px-8 py-4 uppercase" href="#">Localização</a>
+			<a class="md:px-8 py-4 uppercase" href="#">Sobre a Edsa</a>
+			<a class="md:px-8 py-4 uppercase" href="#">RJZ Cyrela</a>
 		</div>
 		<section class="h-lvh bg-[url('/src/assets/images/header.png')] bg-cover bg-center bg-no-repeat">
 			<div class="container mx-auto flex flex-col items-start justify-center h-full">
@@ -132,25 +133,61 @@
 									<p class="tracking-default">O DESIGN</p>
                   <p class="tracking-default font-bold">EM SEU ESTADO NATURAL</p>
 									<div class="container mx-auto center slider mt-24">
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-1.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-2.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-3.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-4.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-5.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-6.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-7.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-8.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-9.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-10.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-11.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-12.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-13.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-14.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-15.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-16.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-17.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/ox-slider/one/slider-one-18.jpg')]" style="height: 12rem;"></div>
-									</div>
+                    <a href="assets/images/ox-slider/one/slider-one-1.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-1.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-2.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-2.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-3.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-3.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-4.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-4.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-5.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-5.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-6.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-6.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-7.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-7.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-8.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-8.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-9.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-9.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-10.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-10.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-11.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-11.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-12.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-12.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-13.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-13.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-14.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-14.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-15.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-15.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-16.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-16.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-17.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-17.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/ox-slider/one/slider-one-18.jpg" class="mx-4" data-lightbox="gallery-ox">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/ox-slider/one/slider-one-18.jpg')]" style="height: 12rem;"></div>
+									  </a>
+                  </div>
 								</div>
 							</div>
 
@@ -291,7 +328,7 @@
                     </div>                    
 									</div>
 									<div class="w-3/4 mx-auto my-24">
-										<div class="sm:grid sm:grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:justify-between gap-8">
+										<div class="sm:grid sm:grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:justify-between gap-8 lg:text-left">
 											<div class="flex-1">
 												<p class="tracking-default">Personal concierge</p>
 												<p class="tracking-default">Shuttle exclusivo</p>
@@ -393,24 +430,58 @@
 									<p class="tracking-default text-design-gray">54 MIL M² DE TERRENO</p>
 									<p class="tracking-default font-bold">PARA APENAS 196 UNIDADES</p>
 									<div class="container mx-auto center slider mt-24">
-										<div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-1.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-2.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-3.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-4.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-5.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-6.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-7.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-8.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-9.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-10.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-11.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-12.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-13.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-14.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-15.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-16.jpg')]" style="height: 12rem;"></div>
-                    <div class="h-64 bg-center bg-cover bg-no-repeat size-full mx-4 bg-[url('/src/assets/images/woods-slider/one/galeria-one-17.jpg')]" style="height: 12rem;"></div>
-									</div>
+                    <a href="assets/images/woods-slider/one/galeria-one-1.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-1.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-2.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-2.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-3.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-3.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-4.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-4.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-5.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-5.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-6.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-6.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-7.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-7.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-8.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-8.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-9.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-9.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-10.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-10.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-11.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-11.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-12.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-12.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-13.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-13.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-14.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-14.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-15.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-15.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-16.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-16.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                    <a href="assets/images/woods-slider/one/galeria-one-17.jpg" class="mx-4" data-lightbox="gallery-woods">
+                      <div class="h-64 bg-center bg-cover bg-no-repeat size-full bg-[url('/src/assets/images/woods-slider/one/galeria-one-17.jpg')]" style="height: 12rem;"></div>
+                    </a>
+                  </div>
 								</div>
 							</div>
 							<!-- GALERIA TWO -->
@@ -704,6 +775,7 @@ TEMOS A MISSÃO DE OFERECER AOS NOSSOS CLIENTES SOLUÇÕES DE DESENVOLVIMENTO IM
     </footer>
 	</body>
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./dist/lightbox/js/lightbox.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script>
 		function toggleAccordion(accordionId, iconId) {
