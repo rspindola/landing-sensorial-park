@@ -1342,6 +1342,10 @@ select {
 }
 
 .tracking-default {
+  letter-spacing: .25em;
+}
+
+.tracking-title {
   letter-spacing: 1rem;
 }
 
