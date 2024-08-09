@@ -835,6 +835,14 @@ select {
   top: 2rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -923,6 +931,10 @@ select {
   margin-top: 2.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -937,6 +949,10 @@ select {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -1004,12 +1020,12 @@ select {
   height: 90%;
 }
 
-.h-full {
-  height: 100%;
+.h-96 {
+  height: 24rem;
 }
 
-.h-lvh {
-  height: 100lvh;
+.h-full {
+  height: 100%;
 }
 
 .h-max {
@@ -1017,8 +1033,8 @@ select {
   height: max-content;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-800 {
+  height: 50rem;
 }
 
 .w-3\/4 {
@@ -1029,12 +1045,17 @@ select {
   width: 100%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .flex-1 {
@@ -1045,6 +1066,11 @@ select {
   resize: both;
 }
 
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -1053,8 +1079,16 @@ select {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-6 {
@@ -1087,6 +1121,14 @@ select {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-24 {
+  gap: 6rem;
 }
 
 .gap-4 {
@@ -1154,6 +1196,11 @@ select {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
+.bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(30 35 38 / var(--tw-bg-opacity));
@@ -1178,170 +1225,6 @@ select {
   background-color: rgb(184 175 69 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/bg-location\.png\'\)\] {
-  background-image: url('/src/assets/images/bg-location.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/bg-ox\.png\'\)\] {
-  background-image: url('/src/assets/images/bg-ox.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/bg-video\.png\'\)\] {
-  background-image: url('/src/assets/images/bg-video.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/bg-woods\.png\'\)\] {
-  background-image: url('/src/assets/images/bg-woods.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/header\.png\'\)\] {
-  background-image: url('/src/assets/images/header.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-1\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-1.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-10\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-10.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-11\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-11.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-12\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-12.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-13\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-13.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-14\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-14.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-15\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-15.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-16\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-16.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-17\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-17.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-18\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-18.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-2\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-2.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-3\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-3.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-4\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-4.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-5\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-5.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-6\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-6.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-7\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-7.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-8\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-8.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/ox-slider\/one\/slider-one-9\.jpg\'\)\] {
-  background-image: url('/src/assets/images/ox-slider/one/slider-one-9.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-1\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-1.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-10\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-10.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-11\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-11.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-12\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-12.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-13\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-13.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-14\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-14.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-15\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-15.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-16\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-16.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-17\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-17.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-2\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-2.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-3\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-3.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-4\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-4.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-5\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-5.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-6\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-6.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-7\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-7.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-8\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-8.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-9\.jpg\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-9.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/woods-slider\/one\/galeria-one-1\'\)\] {
-  background-image: url('/src/assets/images/woods-slider/one/galeria-one-1');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -1352,6 +1235,10 @@ select {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1420,6 +1307,14 @@ select {
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.pb-56 {
+  padding-bottom: 14rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pt-8 {
@@ -1562,22 +1457,6 @@ select {
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-  }
-
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:text-center {
-    text-align: center;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1587,10 +1466,6 @@ select {
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:grid-flow-col {

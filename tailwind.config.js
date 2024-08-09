@@ -11,6 +11,7 @@ module.exports = {
       },
       height: {
         '128': '34rem',
+        '800': '50rem',
         '9/100': '90%'
       },
       letterSpacing: {
