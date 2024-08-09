@@ -137,3 +137,62 @@
   font-display: swap;
 }
 
+.font-avenir-book {
+  font-family: 'AvenirLTStd-Book', sans-serif;
+}
+
+.font-avenir-heavy-oblique {
+  font-family: 'AvenirLTStd-HeavyOblique', sans-serif;
+}
+
+.font-avenir-light-oblique {
+  font-family: 'AvenirLTStd-LightOblique', sans-serif;
+}
+
+.font-avenir-medium-oblique {
+  font-family: 'AvenirLTStd-MediumOblique', sans-serif;
+}
+
+.font-avenir-black {
+  font-family: 'AvenirLTStd-Black', sans-serif;
+}
+
+.font-avenir-oblique {
+  font-family: 'AvenirLTStd-Oblique', sans-serif;
+}
+
+.font-avenir-medium {
+  font-family: 'AvenirLTStd-Medium', sans-serif;
+}
+
+.font-avenir-heavy {
+  font-family: 'AvenirLTStd-Heavy', sans-serif;
+}
+
+.font-avenir-book-oblique {
+  font-family: 'AvenirLTStd-BookOblique', sans-serif;
+}
+
+.font-avenir-light {
+  font-family: 'AvenirLTStd-Light', sans-serif;
+}
+
+.font-avenir-black-oblique {
+  font-family: 'AvenirLTStd-BlackOblique', sans-serif;
+}
+
+.font-avenir-roman {
+  font-family: 'AvenirLTStd-Roman', sans-serif;
+}
+
+.font-avenir-medium-alt {
+  font-family: 'Avenir-Medium', sans-serif;
+}
+
+.font-avenir-book-alt {
+  font-family: 'Avenir-Book', sans-serif;
+}
+
+.font-avenir-heavy-alt {
+  font-family: 'Avenir-Heavy', sans-serif;
+}

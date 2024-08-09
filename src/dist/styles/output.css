@@ -819,10 +819,6 @@ select {
   left: 0px;
 }
 
-.left-8 {
-  left: 2rem;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -1057,10 +1053,6 @@ select {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -1166,11 +1158,6 @@ select {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
-.bg-amber-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(30 35 38 / var(--tw-bg-opacity));
@@ -1193,14 +1180,6 @@ select {
 .bg-yellow-woods {
   --tw-bg-opacity: 1;
   background-color: rgb(184 175 69 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'assets\/images\/header\.png\'\)\] {
-  background-image: url('assets/images/header.png');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/header\.png\'\)\] {
-  background-image: url('../../assets/images/header.png');
 }
 
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/header-bg-mobile\.png\'\)\] {
@@ -1616,6 +1595,66 @@ select {
   font-display: swap;
 }
 
+.font-avenir-book {
+  font-family: 'AvenirLTStd-Book', sans-serif;
+}
+
+.font-avenir-heavy-oblique {
+  font-family: 'AvenirLTStd-HeavyOblique', sans-serif;
+}
+
+.font-avenir-light-oblique {
+  font-family: 'AvenirLTStd-LightOblique', sans-serif;
+}
+
+.font-avenir-medium-oblique {
+  font-family: 'AvenirLTStd-MediumOblique', sans-serif;
+}
+
+.font-avenir-black {
+  font-family: 'AvenirLTStd-Black', sans-serif;
+}
+
+.font-avenir-oblique {
+  font-family: 'AvenirLTStd-Oblique', sans-serif;
+}
+
+.font-avenir-medium {
+  font-family: 'AvenirLTStd-Medium', sans-serif;
+}
+
+.font-avenir-heavy {
+  font-family: 'AvenirLTStd-Heavy', sans-serif;
+}
+
+.font-avenir-book-oblique {
+  font-family: 'AvenirLTStd-BookOblique', sans-serif;
+}
+
+.font-avenir-light {
+  font-family: 'AvenirLTStd-Light', sans-serif;
+}
+
+.font-avenir-black-oblique {
+  font-family: 'AvenirLTStd-BlackOblique', sans-serif;
+}
+
+.font-avenir-roman {
+  font-family: 'AvenirLTStd-Roman', sans-serif;
+}
+
+.font-avenir-medium-alt {
+  font-family: 'Avenir-Medium', sans-serif;
+}
+
+.font-avenir-book-alt {
+  font-family: 'Avenir-Book', sans-serif;
+}
+
+.font-avenir-heavy-alt {
+  font-family: 'Avenir-Heavy', sans-serif;
+}
+
 .focus\:border-black:focus {
   --tw-border-opacity: 1;
   border-color: rgb(30 35 38 / var(--tw-border-opacity));
@@ -1668,24 +1707,12 @@ select {
     flex-direction: row;
   }
 
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
   .md\:text-wrap {
     text-wrap: wrap;
   }
 
   .md\:text-nowrap {
     text-wrap: nowrap;
-  }
-
-  .md\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/header\.png\'\)\] {
-    background-image: url('../../assets/images/header.png');
-  }
-
-  .md\:bg-no-repeat {
-    background-repeat: no-repeat;
   }
 
   .md\:px-8 {
@@ -1809,10 +1836,6 @@ select {
     justify-content: space-between;
   }
 
-  .lg\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/header-bg-mobile\.png\'\)\] {
-    background-image: url('../../assets/images/header-bg-mobile.png');
-  }
-
   .lg\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/header\.png\'\)\] {
     background-image: url('../../assets/images/header.png');
   }
@@ -1823,10 +1846,6 @@ select {
 
   .lg\:bg-center {
     background-position: center;
-  }
-
-  .lg\:bg-no-repeat {
-    background-repeat: no-repeat;
   }
 
   .lg\:px-0 {
@@ -1872,4 +1891,3 @@ select {
     text-align: left;
   }
 }
-

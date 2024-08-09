@@ -11,10 +11,10 @@
 	<body>
     <!-- INICIO HEADER -->
     <div class="absolute w-full grid grid-cols-2 text-center md:flex md:flex-row justify-center items-center text-white">
-      <a class="md:px-8 py-4 uppercase" href="#">Empreendimentos</a>
-      <a class="md:px-8 py-4 uppercase" href="#">Localização</a>
-      <a class="md:px-8 py-4 uppercase" href="#">Sobre a Edsa</a>
-      <a class="md:px-8 py-4 uppercase" href="#">RJZ Cyrela</a>
+      <a class="md:px-8 py-4 uppercase font-avenir-light" href="#empreendimentos">Empreendimentos</a>
+      <a class="md:px-8 py-4 uppercase font-avenir-light" href="#localizacao">Localização</a>
+      <a class="md:px-8 py-4 uppercase font-avenir-light" href="#edsa">Sobre a Edsa</a>
+      <a class="md:px-8 py-4 uppercase font-avenir-light" href="#cyrela">RJZ Cyrela</a>
     </div>
     <section class="h-800 bg-cover bg-center bg-no-repeat bg-[url('../../assets/images/header-bg-mobile.png')] lg:bg-[url('../../assets/images/header.png')]">
       <div class="container mx-auto flex flex-col items-start justify-center h-full">
@@ -23,8 +23,8 @@
                   <img src="assets/images/logo-design.png" class="mx-auto lg:mx-0 mb-8 lg:mb-0" alt="Logo">
               </div>
               <div class="col-span-6 lg:col-span-5 flex flex-col justify-center text-white text-center lg:text-left lg:ps-8">
-                  <h1 class="text-3xl mb-3 tracking-default">Um conceito único de lazer </h1>
-                  <h2 class="text-xl tracking-default uppercase">a céu aberto na Barra da Tijuca 3 e 4 quartos de 100 a 172m²</h2>
+                  <h1 class="text-3xl mb-3 tracking-default uppercase font-avenir-heavy">Um conceito único de lazer </h1>
+                  <h2 class="text-xl tracking-default uppercase font-avenir-medium">a céu aberto na Barra da Tijuca 3 e 4 quartos de 100 a 172m²</h2>
               </div>
           </div>
       </div>
@@ -74,7 +74,7 @@
     <!-- FIM FORM -->
     
     <!-- INICIO ACCORDIONS -->
-		<section class="relative">
+		<section id="empreendimentos" class="relative">
 			<div class="w-full mx-auto relative">
 				<div class="shadow-md rounded-md overflow-hidden relative">
 
@@ -100,7 +100,7 @@
 										<p class="tracking-default font-bold font-avenir-heavy">O NATURAL SE TRANSFORMA NO INIMAGINÁVEL.</p>
 										<p class="mt-4 w-full lg:w-3/4 font-avenir-heavy">2 E 3 QUARTOS DE 132 A 172M²<br />
                       GARDENS, COBERTURAS DUPLEX E LINEARES
-                      </p>
+                    </p>
 									</div>
 									<div>
 										<p class="tracking-default mb-10 text-center font-bold font-avenir-heavy text-xl">RECEBA MAIS INFORMAÇÕES</p>
@@ -666,7 +666,7 @@
 
     <section class="pt-32 pb-56 bg-bottom bg-cover" style="background-image: url('assets/images/bg-park-root.png');">
 			<div class="container mx-auto px-8 lg:px-0">
-				<div class="flex md:flex-row flex-col items-center md:items-start gap-8">
+				<div class="flex md:flex-row flex-col items-center gap-8">
 					<div class="col-span-2">
 						<img src="assets/images/logo-dark.png" alt="Logo">
 					</div>
@@ -690,7 +690,7 @@
 		</section>
 
     <!-- INICIO SOBRE -->
-		<section class="lg:py-24 lg:bg-cover lg:bg-center bg-bottom" style="background-image: url('assets/images/bg-location.png');">
+		<section id="localizacao" class="lg:py-24 lg:bg-cover lg:bg-center bg-bottom" style="background-image: url('assets/images/bg-location.png');">
 			<div class="container mx-auto z-10">
 				<div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-4 w-full items-center">
 					<div class="flex flex-col items-center order-1 lg:order-0">
@@ -719,7 +719,7 @@
     <!-- INICIO DETALHES -->
 		<section class="container mx-auto py-20 lg:pt-44 lg:pb-56 px-8 lg:px-0">
       <!-- INICIO EDSA -->
-			<div class="grid grid-rows lg:grid-cols-2 lg:grid-flow-col gap-4 items-center pb-20 lg:mb-52">
+			<div id="edsa" class="grid grid-rows lg:grid-cols-2 lg:grid-flow-col gap-4 items-center pb-20 lg:mb-52">
 				<div class="mb-8 lg:mb-0 lg:pe-20 text-center lg:text-left">
 					<p class="tracking-default font-avenir-book">SOBRE</p>
 					<p class="tracking-default font-bold mb-4 font-avenir-heavy">A EDSA</p>
@@ -749,7 +749,7 @@
       <!-- FIM SAFRA -->
 
       <!-- INICIO RJZ -->
-			<div class="grid lg:grid-cols-5 lg:grid-flow-col gap-4 items-center lg:mb-44 mb-20">
+			<div id="cyrela" class="grid lg:grid-cols-5 lg:grid-flow-col gap-4 items-center lg:mb-44 mb-20">
 				<div class="lg:col-span-2 flex justify-center items-center">
 					<img src="assets/images/logo-rjz-cyrela.png" alt="Logo">
 				</div>
