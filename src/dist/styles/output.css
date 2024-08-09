@@ -823,8 +823,8 @@ select {
   right: 0px;
 }
 
-.right-12 {
-  right: 3rem;
+.right-8 {
+  right: 2rem;
 }
 
 .top-0 {
@@ -1736,6 +1736,10 @@ select {
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-16 {
+    right: 4rem;
+  }
+
   .lg\:order-1 {
     order: 1;
   }
@@ -1890,5 +1894,11 @@ select {
 
   .lg\:text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:right-24 {
+    right: 6rem;
   }
 }
