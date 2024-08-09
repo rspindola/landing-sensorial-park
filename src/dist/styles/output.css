@@ -1342,7 +1342,7 @@ select {
 }
 
 .tracking-default {
-  letter-spacing: .25em;
+  letter-spacing: 1rem;
 }
 
 .text-black {

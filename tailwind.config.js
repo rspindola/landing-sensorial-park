@@ -16,6 +16,7 @@ module.exports = {
       },
       letterSpacing: {
         default: '.25em',
+        'title': '1rem',
       }
     },
   },
