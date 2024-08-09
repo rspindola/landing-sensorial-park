@@ -1000,10 +1000,6 @@ select {
   height: 100%;
 }
 
-.h-128 {
-  height: 34rem;
-}
-
 .h-2 {
   height: 0.5rem;
 }
@@ -1022,11 +1018,6 @@ select {
 
 .h-full {
   height: 100%;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
 }
 
 .w-3\/4 {
@@ -1184,8 +1175,25 @@ select {
   background-color: rgb(184 175 69 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/bg-video\.png\'\)\] {
+  background-image: url('../../assets/images/bg-video.png');
+}
+
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/header-bg-mobile\.png\'\)\] {
   background-image: url('../../assets/images/header-bg-mobile.png');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/bg-video\.jpeg\'\)\] {
+  background-image: url('../../assets/images/bg-video.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/bg-video\.jpg\'\)\] {
+  background-image: url('../../assets/images/bg-video.jpg');
 }
 
 .bg-cover {
@@ -1335,16 +1343,16 @@ select {
   text-transform: lowercase;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
 
 .leading-tight {
   line-height: 1.25;
-}
-
-.leading-8 {
-  line-height: 2rem;
 }
 
 .tracking-default {
