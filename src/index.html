@@ -707,7 +707,7 @@
 						</p>
 						<span class="flex my-6 items-center text-center md:text-left">
               <img src="assets/images/icon-place.png" alt="Icone de localizaçao" class="me-4">
-              <p class="font-bold text-white font-avenir-light text-nowrap md:text-wrap text-sm">AV. RACHEL DE QUEIROZ - BARRA DA TIJUCA</p>
+              <p class="font-bold text-white font-avenir-light text-sm">AV. RACHEL DE QUEIROZ - BARRA DA TIJUCA</p>
             </span>
 						<button class="uppercase w-full bg-white text-black py-2 tracking-default text-sm md:text-base font-avenir-light">Quero mais informações</button>
 					</div>
@@ -810,13 +810,13 @@
     $('.projetos').slick({
       dots: false,
       infinite: true,
-      slidesToShow: 5,
+      slidesToShow: 6,
       slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 6,
             slidesToScroll: 3,
             infinite: true,
           }
@@ -824,6 +824,8 @@
         {
           breakpoint: 600,
           settings: {
+            arrows: true,
+            speed: 300,
             slidesToShow: 2,
             slidesToScroll: 2
           }
@@ -831,8 +833,12 @@
         {
           breakpoint: 480,
           settings: {
+            centerMode: true,
+            arrows: true,
+            speed: 300,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            variableWidth: true
           }
         }
         // You can unslick at a given breakpoint now by adding:
