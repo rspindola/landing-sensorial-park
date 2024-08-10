@@ -9,6 +9,9 @@ module.exports = {
         'yellow-woods': '#b8af45',
         'input': '#848983'
       },
+      inset: {
+        '-16': '-4rem',
+      },
       height: {
         '128': '34rem',
         '800': '50rem',
